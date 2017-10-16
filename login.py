@@ -1,3 +1,3 @@
 # -*- coding:'utf8' -*-
-#encoding=utf-8
-print 'ä½ å¥½'
+#encoding=GBK
+print 'ÄãºÃ'
