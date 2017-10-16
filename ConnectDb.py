@@ -78,7 +78,7 @@ def getValue(key):
 
 #登录获取session、cookie等数据
 def login():
-    login_url='https://154.211.26.40/rcubbi_web/logon'
+    login_url='/rcubbi_web/logon'
     headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0'}
     httpSession = requests.session()
     data = {
@@ -111,7 +111,7 @@ def getAskFromDbForTest(id):
     }
 
     spiderData = session.query(TargetSpider).filter(TargetSpider.id == id).one()
-    askUrl = "http://154.211.26.40" + spiderData.url
+    askUrl = "" + spiderData.url
 
     data = {
         'date' : date,
