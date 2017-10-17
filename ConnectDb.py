@@ -125,7 +125,8 @@ def getAskFromDbForTest(id):
     }
 
     httpSession = requests.session()
-    resp = httpSession.post(askUrl, data=data, header=headers)
+    resp = httpSession.post(askUrl, data=data, headers=headers)
+    print resp.content
 
 if __name__ == "__main__":
     dbConnect()
