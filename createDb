@@ -1,1 +1,26 @@
 select * from kv_map
+
+CREATE TABLE target_spider
+(
+    id VARCHAR(50),
+    name VARCHAR(50),
+    parameter VARCHAR(200),
+    url VARCHAR(50),
+    viewType VARCHAR(50),
+    date VARCHAR(50),
+    is_second VARCHAR(50),
+    agg_lev VARCHAR(50),
+    user_bank VARCHAR(50),
+    regf_kind VARCHAR(50),
+    currency INT,
+    acctn_type VARCHAR(50),
+    industry VARCHAR(50),
+    fileName VARCHAR(50),
+    path VARCHAR(50),
+    data_rows VARCHAR(50),
+    data_clos VARCHAR(50),
+    `describe` VARCHAR(200),
+    remark1 VARCHAR(50),
+    remark2 VARCHAR(50),
+    remark3 VARCHAR(50)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
